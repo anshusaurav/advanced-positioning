@@ -1,0 +1,195 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS Added by me */
+
+/* ClearFix */
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+/* For centering text */
+.center-text {
+    text-align: center;
+}
+
+/* Containers */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+body {
+    line-height: 1.5;
+}
+/* header */
+.nav-header{
+    padding: 24px 0;
+
+}
+.nav-logo {
+    float: left;
+    padding: 8px 0;
+}
+.nav-links {
+    padding: 12px 0;
+    float: right;
+}
+.nav-links a, .nav-logo {
+   
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+.logo-image {
+    background: transparent;
+}
+/*Universal */
+
+* {
+    box-sizing: border-box;
+}
+/* header font  */
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+.nav-links a{
+    font-size:18px;
+    font-weight: 400;
+    padding-right: 42px;
+}
+/*Setting up background */
+.header {
+    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    background: black; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+/* floats for main section */
+.col-1-2{
+    float:left;
+    width: 50%;
+    padding: 0 2%;
+}
+
+.article-text{
+    padding: 12px 0;
+}
+/*Styling articles */ 
+.first-section, .second-section{
+    margin: 180px 130px 20px 130px;
+}
+
+.first-section h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;    
+    font-weight: 600;
+    color: #555555;
+    text-transform: uppercase;
+}
+
+.first-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    line-height: 2.0;
+    height: 900;
+}
+
+.col-1-3{
+    width: 33%;
+    float: left;
+    font-size: 0;
+}
+.footer{
+    font-family: 'Open Sans', sans-serif;
+    background: black;
+    padding: 40px 0;
+}
+/* Copyright CSS */
+.small{
+    width: 50%; 
+    color: #9CA0A5;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 25%;
+    text-transform: uppercase;
+}
+.circular-btn{
+    font-family: 'Open Sans', sans-serif;
+    background: transparent;
+    width: 80px;
+    height: 80px;
+    color: #51BAA4;
+    position: fixed;
+    right:  20px;
+    bottom: 20px;
+    border-radius: 50%;
+    border: 2px solid crimson;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.circular-btn a{
+    text-decoration: none;
+    color: crimson;
+}
